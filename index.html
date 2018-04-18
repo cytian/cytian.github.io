@@ -1,29 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Yutian Chen personal webpage</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<title>Bootstrap Theme Simply Me</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		.bg-1 { 
+			padding-top: 120px;
+			padding-bottom: 70px;
+			background-color: #1abc9c; /* Green */
+			color: #ffffff;
+		}
+		.bg-2 {
+			background-color: #474e5d; /* Dark Blue */
+			color: #ffffff;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 20px;
+			padding-bottom: 70px;
+		}
+		.bg-3 {
+			background-color: #ffffff; /* White */
+			color: #555555;
+		}
+		</style>
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Yutian Chen!</h1>
-				<p>... <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="https://github.com/cytian">github.com/cytian</a></li>
-			</ul>
-		</footer>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" >Yutian Chen</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#me">About me</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="asset/Yutian resume 2018_2.pdf" target="_blank">Resume</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<a id="me"></a>
+	<div class="container-fluid  bg-1" >
+		<div class="row  ">
+			<div class="col-sm-3 col-lg-4">
+			</div>
+			<div class="col-sm-3 col-lg-2  text-center">
+				<img src="asset/photo.jpg" class="img-circle" style="max-width:85%" alt="Photo">
+			</div>	
+			<div class="col-sm-3 text-center">
+				<h1>Yutian Chen</h1>
+				<h5>Master student in</h5>
+				<h5>Electrical and Computer Engineering</h5>
+				<h5>University of Michigan</h5>
+				<h5>Email: cytian@umich.edu</h5>
+				<a href="https://github.com/cytian" style="color:#ffffff">GitHub: github.com/cytian</a>
+			</div>			
+		</div>
+	</div>
+	<a id="experience"></a>
+	<div class="container-fluid  bg-2" >
+		<div class="row  ">
+			<div class="col-sm-3 col-lg-4">
+			</div>
+			<div class="col-sm-6 col-lg-5">
+				<h1>Experience</h1>
+				<h3>Line Chart Viewer</h3>
+				<ul>
+					<li>Designed a Windows application GUI with WPF(C#) 
+					in MVVM pattern for the customers to plot the data in line charts.</li>
+					<li>Implemented the functionality of multiple chart display, data 
+					cropping and data filtering.</li>
+					<li>Optimize the capability and speed of the viewer to plot over 
+					1,000,000 points in 2 seconds.</li>				
+				</ul>
+				<h3>Famous People Search</h3>
+				<ul>
+					<li>Developed a generalized web crawler in Python to collect images 
+					of famous people together with names.</li>
+					<li>Applied NLP and face detection technique to extract Chinese 
+					names and link them to the corresponding images in the web page.</li>
+					<li>Optimized the efficiency to 1.5 seconds per page in average 
+					and optimized the accuracy to 70% in our test.</li>				
+				</ul>
+				<h3>BotLab Autonomous Navigation</h3>
+				<ul>
+					<li>Led a team of four to develop a SLAM algorithm in C++ for
+					the Maebot to explore and navigate autonomously in a maze.</li>
+					<li>Distributed the work to every individual and gathered them
+					together every week to test and improve the performance of the Maebot.</li>
+					<li>Got 1st place in the competition among all the 12 teams to 
+					traverse the perimeter of a square and 2nd place in the final challenge
+					to explore and escape from a maze.</li>				
+				</ul>
+				<h3>MIDI Controller</h3>
+				<ul>
+					<li>Designed a MIDI controller with a pair of wireless gloves, a TFT
+					touchscreen, and an 8x8 LED button pad, which allows users to create background
+					music using the touchscreen and button pad and play real time music with the glove
+					at the same time.</li>
+					<li>Implemented API library for the LED button pad control, setup the
+					communication between base console and gloves through Xbee and integrated 
+					all components to generate the MIDI message and shortened the delay of real
+					time playing to around 40ms.</li>		
+				</ul>
+			</div>						
+		</div>
+	</div>
+
 	</body>
 </html>
